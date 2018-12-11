@@ -1,2 +1,2 @@
-# perl-holidayapi
-Official Perl library for Holiday API
+# perl6-holidayapi
+Official Perl 6 library for Holiday API
