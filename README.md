@@ -32,11 +32,11 @@ my $query    = "key={$HOLAPI-KEY}{$options}&country={$country}&year={$year}";
 my $api-uri  = "{$data-location}?{$query}";
 my $response = $ua.get($api-uri);
 if $response.is-success {
-	say "Working year '$year'...";
+    say "Working year '$year'...";
     spurt $json-data, $response.content;
     say "See JSON data file '$json-data'.";
 }
 else {
-	die $response.status-line;
+    die $response.status-line;
 }
 ```
